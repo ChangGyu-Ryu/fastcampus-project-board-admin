@@ -38,10 +38,6 @@ public class SecurityConfig {
                 .authorizeHttpRequests(auth -> auth.requestMatchers(PathRequest.toStaticResources().atCommonLocations()).permitAll()
                         .requestMatchers(HttpMethod.POST, "/**").hasAnyRole(rolesAboveManager)
                         .requestMatchers(HttpMethod.DELETE, "/**").hasAnyRole(rolesAboveManager)
-                        .requestMatchers(
-                                HttpMethod.GET,
-                                "/**"
-                        ).permitAll()
                         .anyRequest().authenticated()
                 )
                 .formLogin(withDefaults())
