@@ -18,7 +18,6 @@ import java.util.Optional;
 public class UserAccountManagementService {
 
     private final RestTemplate restTemplate;
-
     private final ProjectProperties projectProperties;
 
     public List<UserAccountDto> getUserAccounts() {
@@ -33,7 +32,6 @@ public class UserAccountManagementService {
 
     public UserAccountDto getUserAccount(String userId) {
         URI uri = UriComponentsBuilder.fromHttpUrl(projectProperties.board().url() + "/api/userAccounts/" + userId)
-                .queryParam("projection", "withUserAccount")
                 .build()
                 .toUri();
         UserAccountDto response = restTemplate.getForObject(uri, UserAccountDto.class);
