@@ -1,6 +1,7 @@
 # 어드민 서비스 - 패스트캠퍼스, 10개 프로젝트로 완성하는 백엔드 웹개발
 
-게시판 서비스의 관리 도구를 개발해보는 프로젝트입니다. 2022년 6월 기준 가장 최신의 스프링 부트와 관련 기술들, 자바 17 기능들, 개발 도구들을 경험할 수 있도록 만들어졌습니다.
+게시판 서비스의 관리 도구를 개발해보는 프로젝트입니다. 
+
 Spring Boot 3.2.2와 Spring Security 6.3.1.2.RELEASE 버전을 이용하여 만들어졌습니다.
 
 ## 개발 환경
@@ -42,6 +43,8 @@ Spring Boot
 
 * 어드민 서비스 : https://project-board-admin.fly.dev/
 
+## 릴리즈
+* https://github.com/ChangGyu-Ryu/fastcampus-project-board-admin/releases
 
 ## Reference
 
